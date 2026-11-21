@@ -1,0 +1,26 @@
+{
+  "name": "marketplace-seed-parte-4",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Seed de 1.000 produtos, 5.000 usuários e 100.000 pedidos para análise de índices no MongoDB",
+  "main": "seed.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "indexes": "node indexes.js",
+    "benchmark": "node benchmark.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "keywords": [
+    "mongodb",
+    "seed",
+    "indexes",
+    "benchmark"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^7.9.1"
+  }
+}

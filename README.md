@@ -11,6 +11,7 @@ Cada parte da tarefa fica em uma pasta própria na raiz do repositório.
 | Parte 1 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 1` | Concluída |
 | Parte 2 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 2` | Concluída |
 | Parte 3 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 3` | Concluída |
+| Parte 4 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 4` | Concluída |
 
 ### Parte 1 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
 
@@ -38,3 +39,11 @@ Marketplace com **Node.js + Express + MongoDB (Mongoose)**, com persistência do
 usuários, produtos e pedidos, validação de ObjectId e baixa de estoque atômica.
 
 - Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Parte%203/README.md)
+
+### Parte 4 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
+
+Seed com **1.000 produtos, 5.000 usuários e 100.000 pedidos**, análise dos gargalos
+sem índices secundários e criação de índices para as consultas mais comuns.
+
+- Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Parte%204/README.md)
+- Amostra do banco e benchmark: [`AMOSTRA.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Parte%204/AMOSTRA.md)
