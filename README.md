@@ -2,8 +2,7 @@
 
 Repositório das tarefas práticas da disciplina **Banco de Dados Não Relacional**.
 
-Cada parte da tarefa fica em uma pasta própria na raiz do repositório. A Parte 3
-é mantida em um repositório separado, conforme o enunciado.
+Cada parte da tarefa fica em uma pasta própria na raiz do repositório.
 
 ## Partes
 
@@ -11,7 +10,7 @@ Cada parte da tarefa fica em uma pasta própria na raiz do repositório. A Parte
 |---|---|---|
 | Parte 1 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 1` | Concluída |
 | Parte 2 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 2` | Concluída |
-| Parte 3 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 3` (repositório separado) | Concluída |
+| Parte 3 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 3` | Concluída |
 
 ### Parte 1 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
 
@@ -38,4 +37,4 @@ compra com redução de estoque.
 Marketplace com **Node.js + Express + MongoDB (Mongoose)**, com persistência dos
 usuários, produtos e pedidos, validação de ObjectId e baixa de estoque atômica.
 
-- Repositório: <https://github.com/rladeiraFatec/Desafio-Tecnico-Back-End-Engenharia-de-Dados-com-MongoDB-Parte-3>
+- Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Parte%203/README.md)
