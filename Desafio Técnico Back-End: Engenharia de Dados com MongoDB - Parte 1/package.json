@@ -1,0 +1,26 @@
+{
+  "name": "marketplace-memoria",
+  "version": "1.0.0",
+  "description": "Marketplace simples com Node.js, Express e armazenamento em memória",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@12.11.2",
+  "keywords": [
+    "marketplace",
+    "express",
+    "nodejs",
+    "in-memory"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
