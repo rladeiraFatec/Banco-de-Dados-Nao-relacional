@@ -25,20 +25,34 @@ Porta opcional: `PORT=4000 pnpm start`.
 
 ## Endpoints
 
+### Rotas do modelo inicial
+
+| Método | Rota | Descrição |
+|---|---|---|
+| POST | `/usuarios` | Cadastrar vendedor ou comprador |
+| POST | `/produtos` | Anunciar produto (somente vendedor) |
+| GET | `/produtos` | Vitrine de produtos disponíveis |
+| POST | `/pedidos` | Realizar compra (somente comprador) |
+
+As rotas do modelo mantêm o mesmo caminho e método do exemplo inicial, mas com
+validações mais rígidas, status HTTP corrigidos (`404`, `409`) e respostas
+enriquecidas com dados de vendedor, comprador e produto.
+
+### Rotas adicionais (extensões)
+
 | Método | Rota | Descrição |
 |---|---|---|
 | GET | `/health` | Status do serviço |
-| POST | `/usuarios` | Cadastrar vendedor ou comprador |
 | GET | `/usuarios` | Listar usuários (`?tipo=`) |
 | GET | `/usuarios/:id` | Detalhar usuário |
-| POST | `/produtos` | Anunciar produto (somente vendedor) |
-| GET | `/produtos` | Vitrine (`?todos=true&q=&vendedorId=`) |
 | GET | `/produtos/:id` | Detalhar produto |
 | PATCH | `/produtos/:id` | Atualizar anúncio (somente o dono) |
-| POST | `/pedidos` | Comprar (somente comprador) |
 | GET | `/pedidos` | Listar pedidos (`?compradorId=&vendedorId=&status=`) |
 | GET | `/pedidos/:id` | Detalhar pedido |
 | POST | `/pedidos/:id/cancelar` | Cancelar e devolver estoque |
+
+Extensão adicional: `GET /produtos` aceita os filtros opcionais
+`?todos=true`, `?q=` e `?vendedorId=`.
 
 ## Exemplo rápido
 
@@ -81,5 +95,6 @@ tests/api.test.js   # testes de integração
 ## Limitações
 
 Sem autenticação real, sem persistência e sem transações. A identidade do comprador
-e do vendedor é informada no corpo da requisição. A evolução sugerida está na
-seção 11 do [OVERVIEW.md](./OVERVIEW.md).
+e do vendedor é informada no corpo da requisição. Consultas, atualização de anúncio
+e cancelamento de pedido são extensões desta entrega, além das quatro rotas do
+modelo inicial. A evolução sugerida está na seção 11 do [OVERVIEW.md](./OVERVIEW.md).

@@ -17,5 +17,8 @@ Marketplace simples em **Node.js + Express** com **armazenamento em memória**,
 cobrindo cadastro de vendedores e compradores, anúncio de produtos, vitrine,
 compras e cancelamento de pedidos.
 
+A entrega implementa as quatro rotas do modelo inicial e inclui extensões
+documentadas: consultas, atualização de anúncio e cancelamento de pedido.
+
 - Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Parte%201/README.md)
 - Visão geral do sistema: [`OVERVIEW.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Parte%201/OVERVIEW.md)

@@ -42,19 +42,23 @@ estado em memória. Não há banco, cache externo, fila ou serviço de terceiros
 
 ## 4. Requisitos funcionais
 
-| Código | Requisito |
-|---|---|
-| RF01 | Cadastrar usuário como `vendedor` ou `comprador`. |
-| RF02 | Listar usuários, com filtro opcional por tipo. |
-| RF03 | Consultar usuário por ID. |
-| RF04 | Anunciar produto (somente `vendedor`). |
-| RF05 | Listar a vitrine (somente produtos com estoque > 0, por padrão). |
-| RF06 | Consultar detalhes de um produto. |
-| RF07 | Atualizar nome, descrição, preço ou estoque (somente o vendedor dono). |
-| RF08 | Realizar compra (somente `comprador`), baixando o estoque. |
-| RF09 | Listar pedidos, com filtros por comprador, vendedor e status. |
-| RF10 | Consultar pedido por ID. |
-| RF11 | Cancelar pedido (somente o comprador dono), devolvendo o estoque. |
+As quatro rotas do modelo inicial correspondem ao **núcleo** desta entrega
+(RF01, RF04, RF05 e RF08). Os demais requisitos são **extensões** documentadas,
+que ampliam o sistema sem alterar o contrato mínimo do enunciado.
+
+| Código | Requisito | Origem |
+|---|---|---|
+| RF01 | Cadastrar usuário como `vendedor` ou `comprador`. | Núcleo (modelo) |
+| RF02 | Listar usuários, com filtro opcional por tipo. | Extensão |
+| RF03 | Consultar usuário por ID. | Extensão |
+| RF04 | Anunciar produto (somente `vendedor`). | Núcleo (modelo) |
+| RF05 | Listar a vitrine (somente produtos com estoque > 0, por padrão). | Núcleo (modelo) |
+| RF06 | Consultar detalhes de um produto. | Extensão |
+| RF07 | Atualizar nome, descrição, preço ou estoque (somente o vendedor dono). | Extensão |
+| RF08 | Realizar compra (somente `comprador`), baixando o estoque. | Núcleo (modelo) |
+| RF09 | Listar pedidos, com filtros por comprador, vendedor e status. | Extensão |
+| RF10 | Consultar pedido por ID. | Extensão |
+| RF11 | Cancelar pedido (somente o comprador dono), devolvendo o estoque. | Extensão |
 
 ### Fora do escopo desta parte
 
@@ -181,20 +185,24 @@ status e no corpo adequados.
 
 Base local: `http://localhost:3000`
 
-| Método | Rota | Descrição | Sucesso | Principais erros |
-|---|---|---|---|---|
-| GET | `/health` | Verifica se o serviço está no ar. | 200 | — |
-| POST | `/usuarios` | Cadastra vendedor ou comprador. | 201 | 400 |
-| GET | `/usuarios` | Lista usuários (`?tipo=`). | 200 | 400 |
-| GET | `/usuarios/:id` | Detalha usuário. | 200 | 400, 404 |
-| POST | `/produtos` | Anuncia produto. | 201 | 400, 403, 404 |
-| GET | `/produtos` | Vitrine (`?todos=true&q=&vendedorId=`). | 200 | 400 |
-| GET | `/produtos/:id` | Detalha produto. | 200 | 400, 404 |
-| PATCH | `/produtos/:id` | Atualiza anúncio (dono). | 200 | 400, 403, 404 |
-| POST | `/pedidos` | Realiza compra. | 201 | 400, 403, 404, 409 |
-| GET | `/pedidos` | Lista pedidos (`?compradorId=&vendedorId=&status=`). | 200 | 400 |
-| GET | `/pedidos/:id` | Detalha pedido. | 200 | 400, 404 |
-| POST | `/pedidos/:id/cancelar` | Cancela e devolve estoque. | 200 | 400, 403, 404, 409 |
+| Método | Rota | Descrição | Sucesso | Principais erros | Origem |
+|---|---|---|---|---|---|
+| GET | `/health` | Verifica se o serviço está no ar. | 200 | — | Extensão |
+| POST | `/usuarios` | Cadastra vendedor ou comprador. | 201 | 400 | Modelo |
+| GET | `/usuarios` | Lista usuários (`?tipo=`). | 200 | 400 | Extensão |
+| GET | `/usuarios/:id` | Detalha usuário. | 200 | 400, 404 | Extensão |
+| POST | `/produtos` | Anuncia produto. | 201 | 400, 403, 404 | Modelo |
+| GET | `/produtos` | Vitrine (`?todos=true&q=&vendedorId=`). | 200 | 400 | Modelo |
+| GET | `/produtos/:id` | Detalha produto. | 200 | 400, 404 | Extensão |
+| PATCH | `/produtos/:id` | Atualiza anúncio (dono). | 200 | 400, 403, 404 | Extensão |
+| POST | `/pedidos` | Realiza compra. | 201 | 400, 403, 404, 409 | Modelo |
+| GET | `/pedidos` | Lista pedidos (`?compradorId=&vendedorId=&status=`). | 200 | 400 | Extensão |
+| GET | `/pedidos/:id` | Detalha pedido. | 200 | 400, 404 | Extensão |
+| POST | `/pedidos/:id/cancelar` | Cancela e devolve estoque. | 200 | 400, 403, 404, 409 | Extensão |
+
+As rotas marcadas como **Modelo** preservam caminho e método do exemplo inicial,
+mas com validação mais rígida, status HTTP corrigidos e respostas enriquecidas.
+Os filtros de `GET /produtos` também são uma extensão sobre a rota do modelo.
 
 ### Formato dos erros
 
