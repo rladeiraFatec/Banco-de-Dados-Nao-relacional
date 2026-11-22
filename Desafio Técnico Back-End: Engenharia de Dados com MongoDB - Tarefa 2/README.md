@@ -9,14 +9,16 @@ Dois pipelines executados diretamente no MongoDB, usando a base da Tarefa 1:
    nome, e-mail, total gasto e quantidade de pedidos, paginado e com o total de
    clientes elegíveis no mesmo `$facet`.
 
-O relatório completo está em **[RELATORIO.md](./RELATORIO.md)** e em
-**[RELATORIO.pdf](./RELATORIO.pdf)**.
+O relatório está em **[RELATORIO.md](./RELATORIO.md)** e em
+**[RELATORIO.pdf](./RELATORIO.pdf)**: primeiro as duas respostas (pipelines e
+resultados) e, em seguida, as observações de implementação. Este README concentra
+a execução e a reprodução.
 
 ## Estrutura
 
 ```text
 .
-├── RELATORIO.md      # pipelines, explicação, resultados e explain
+├── RELATORIO.md      # respostas e observações de implementação
 ├── RELATORIO.pdf     # versão em PDF
 ├── README.md
 ├── pipelines.js      # definição dos dois pipelines
