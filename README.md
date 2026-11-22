@@ -14,6 +14,7 @@ Cada parte da tarefa fica em uma pasta própria na raiz do repositório.
 | Parte 4 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 4` | Concluída |
 | Tarefa 1 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 1` | Concluída |
 | Tarefa 2 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 2` | Concluída |
+| Tarefa 3 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 3` | Concluída |
 
 ### Parte 1 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
 
@@ -68,3 +69,12 @@ VIP paginado**, executados diretamente no MongoDB.
 - Relatório: [`RELATORIO.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%202/RELATORIO.md)
 - PDF: [`RELATORIO.pdf`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%202/RELATORIO.pdf)
 - Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%202/README.md)
+
+### Tarefa 3 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
+
+Diagnóstico da consulta de pedidos por **cidade, status e período**, com
+`explain("executionStats")` antes e depois da criação de um índice composto pela
+regra **ESR**.
+
+- Solução: [`SOLUCAO.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%203/SOLUCAO.md)
+- Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%203/README.md)

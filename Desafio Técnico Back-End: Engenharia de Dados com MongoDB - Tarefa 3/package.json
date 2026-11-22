@@ -1,0 +1,25 @@
+{
+  "name": "marketplace-diagnostico-tarefa-3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Diagnóstico e otimização da consulta de pedidos por cidade, status e data",
+  "main": "benchmark.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "diagnostico": "node benchmark.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mongodb",
+    "explain",
+    "indice",
+    "esr",
+    "performance"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^7.9.1"
+  }
+}
