@@ -1,0 +1,28 @@
+{
+  "name": "marketplace-agregacoes-tarefa-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pipelines de agregação do marketplace: faturamento por categoria e ranking VIP",
+  "main": "run.js",
+  "scripts": {
+    "relatorio": "node run.js",
+    "pdf": "node build-pdf.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mongodb",
+    "aggregation",
+    "pipeline",
+    "facet",
+    "relatorio"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^7.9.1"
+  },
+  "devDependencies": {
+    "marked": "^15.0.0"
+  }
+}

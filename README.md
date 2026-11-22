@@ -13,6 +13,7 @@ Cada parte da tarefa fica em uma pasta própria na raiz do repositório.
 | Parte 3 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 3` | Concluída |
 | Parte 4 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Parte 4` | Concluída |
 | Tarefa 1 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 1` | Concluída |
+| Tarefa 2 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 2` | Concluída |
 
 ### Parte 1 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
 
@@ -58,3 +59,12 @@ e leitura rápida da tela do produto.
 - Solução: [`SOLUCAO.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%201/SOLUCAO.md)
 - Amostra e benchmark: [`AMOSTRA.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%201/AMOSTRA.md)
 - Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%201/README.md)
+
+### Tarefa 2 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
+
+Pipelines de agregação para **faturamento por categoria** e **ranking de clientes
+VIP paginado**, executados diretamente no MongoDB.
+
+- Relatório: [`RELATORIO.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%202/RELATORIO.md)
+- PDF: [`RELATORIO.pdf`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%202/RELATORIO.pdf)
+- Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%202/README.md)
