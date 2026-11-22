@@ -15,6 +15,7 @@ Cada parte da tarefa fica em uma pasta própria na raiz do repositório.
 | Tarefa 1 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 1` | Concluída |
 | Tarefa 2 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 2` | Concluída |
 | Tarefa 3 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 3` | Concluída |
+| Tarefa 4 | `Desafio Técnico Back-End: Engenharia de Dados com MongoDB - Tarefa 4` | Concluída |
 
 ### Parte 1 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
 
@@ -78,3 +79,11 @@ regra **ESR**.
 
 - Solução: [`SOLUCAO.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%203/SOLUCAO.md)
 - Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%203/README.md)
+
+### Tarefa 4 — Desafio Técnico Back-End: Engenharia de Dados com MongoDB
+
+Checkout transacional com débito de **estoque**, débito de **carteira** e criação
+do pedido `PAID` na mesma transação, com rollback em qualquer falha.
+
+- Solução: [`SOLUCAO.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%204/SOLUCAO.md)
+- Código e instruções: [`README.md`](./Desafio%20T%C3%A9cnico%20Back-End%3A%20Engenharia%20de%20Dados%20com%20MongoDB%20-%20Tarefa%204/README.md)
