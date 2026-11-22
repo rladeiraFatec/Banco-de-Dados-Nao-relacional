@@ -1,0 +1,29 @@
+{
+  "name": "marketplace-modelagem-tarefa-1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modelagem e evolução de schema no MongoDB: avaliações de produtos e histórico de status dos pedidos",
+  "main": "seed.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "indexes": "node indexes.js",
+    "benchmark": "node benchmark.js",
+    "demo": "node demo.js",
+    "setup": "node seed.js && node indexes.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mongodb",
+    "modelagem",
+    "embedding",
+    "referencing",
+    "unbounded-arrays",
+    "reviews"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^7.9.1"
+  }
+}
